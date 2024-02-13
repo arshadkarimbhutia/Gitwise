@@ -7,3 +7,7 @@
 	- **git add <!-- filename(s) -->** : stages specific files for committing.
 	- **git add .** : stages all changes in the current directory for committing. It does not stage the removal of files.
 	- **git add -A** or **git add -all** : stages all changes in the current directory including new files, and removals. It's a more inclusive command than **git add .**
+- **git commit** : commits/records the changes that you have staged using **_git add_** with a commit message. If you directly run this command it opens your default text editor for you to write a commit message (flexible for multi-line messages).
+	- **git commit -m "<!-- commit message -->"** : commits changes in a concise way with a commit message directly from the command line.
+	- **git commit --amend -m "<!-- commit message -->"** : modifies the last commit by allowing you to basically 'redo' the previous commit. It combines staged changes with the previous commit, effectively allowing you to add more changes or modify the commit message.
+	- **git commit -a -m "<!-- commit message -->"** : commits all changes, including modifications and deletions for already tracked files, without the need for explicit **_git add_**. Note that it only skips the explicit **git add <!-- modified file(s) -->** for modified and deleted files. It won't handle new, untracked files---you still need to use **git add** for that.
