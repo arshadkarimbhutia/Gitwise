@@ -1,1 +1,2 @@
 - **git version** : displays the installed Git version on the system; helps you verify if Git is installed.
+- **git init** : initializes/creates a new Git repository. Make sure you are not already inside of a Git repository when you initialize one.
