@@ -36,4 +36,16 @@
 		- **git diff --staged <!-- file1 file2 ... -->** or
 		- **git diff branch1..branch2 <!-- file1 file2 ... -->** or
 		- **git diff commit1..commit2 <!-- file1 file2 ... -->**
+- **git stash** : saves changes that you are not ready to commit yet. It essentially allows you to temporarily save your working directory and index allowing you to switch branches or perform other tasks without committing your changes. If you directly run this command or you run it with the _save_ argument: **git stash save**, it will take all uncommitted changes (staged or unstaged) and stash/save them, reverting the working directory and index to the state of the last commit. You can also include a stash message to describe the changes you're stashing by writing it within quotation marks after the stash command with the save option: **git stash save "<!-- stash message -->"**.
+	- **git stash list** : displays a stash history of a Git repository by showing a chronological list of stashes, starting from the most recent and going backward in time.
+	- **git stash apply** : applies the changes from the most recent stash to your working directory and index without removing the stash itself. This can be useful if you want to apply stashed changes to multiple branches.
+	- **git stash drop** : drops or removes the most recent stash from the stash list permanently.
+	- **git stash clear** : clears out the entire stash list permanently.
+	- **git stash pop** : applies the most recent stash and removes it from the stash list. It's a combination of two different actions performed by two different commands:-
+		1. Applying or restoring the most recent stash to your working directory and index. This action is performed by **git stash apply**.
+		2. Dropping or removing the most recent or applied stash from the stash list. This action is typically performed by **git stash drop**.
+	> The stash commands to apply, drop or pop stashes can be used with specific stashes only, too:-
+		 1. **git stash apply stash@{<!-- stash index -->}** or
+		 2. **git stash drop stash@{<!-- stash index -->}** or
+		 3. **git stash pop stash@{<!-- stash index -->}**
 - 
