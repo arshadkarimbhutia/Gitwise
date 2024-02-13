@@ -1,0 +1,1 @@
+- **git version** : displays the installed Git version on the system; helps you verify if Git is installed.
