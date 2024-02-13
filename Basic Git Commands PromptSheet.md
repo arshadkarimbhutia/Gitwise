@@ -11,3 +11,5 @@
 	- **git commit -m "<!-- commit message -->"** : commits changes in a concise way with a commit message directly from the command line.
 	- **git commit --amend -m "<!-- commit message -->"** : modifies the last commit by allowing you to basically 'redo' the previous commit. It combines staged changes with the previous commit, effectively allowing you to add more changes or modify the commit message.
 	- **git commit -a -m "<!-- commit message -->"** : commits all changes, including modifications and deletions for already tracked files, without the need for explicit **_git add_**. Note that it only skips the explicit **git add <!-- modified file(s) -->** for modified and deleted files. It won't handle new, untracked files---you still need to use **git add** for that.
+- **git log** : displays the commit history of a Git repository by showing a chronological list of commits, starting from the most recent and going backward in time.
+	- **git log --oneline** : displays each commit in a condensed, one-line format providing a concise overview of the commit history.
