@@ -3,3 +3,7 @@
 - **git status** : gives information on the current status of a Git repository.
 - **git config --global user.name <!-- your name -->** : sets (if you provide a value after **user.name**) or displays (if you run it with no arguments) the global Git username.
 - **git config --global user.email <!-- your email -->** : sets (if you provide a value after **user.email**) or displays (if you run it with no arguments) the global Git email address.
+- **_git add_** : stages the changes for committing --- tells git to include updates to specific files, folders, etc. in the upcoming commit.
+	- **git add <!-- filename(s) -->** : stages specific files for committing.
+	- **git add .** : stages all changes in the current directory for committing. It does not stage the removal of files.
+	- **git add -A** or **git add -all** : stages all changes in the current directory including new files, and removals. It's a more inclusive command than **git add .**
