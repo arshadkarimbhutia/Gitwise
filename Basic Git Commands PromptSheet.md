@@ -1,3 +1,5 @@
 - **git version** : displays the installed Git version on the system; helps you verify if Git is installed.
 - **git init** : initializes/creates a new Git repository. Make sure you are not already inside of a Git repository when you initialize one.
 - **git status** : gives information on the current status of a Git repository.
+- **git config --global user.name <!-- your name -->** : sets (if you provide a value after **user.name**) or displays (if you run it with no arguments) the global Git username.
+- **git config --global user.email <!-- your email -->** : sets (if you provide a value after **user.email**) or displays (if you run it with no arguments) the global Git email address.
