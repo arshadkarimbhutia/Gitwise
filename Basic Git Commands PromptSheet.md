@@ -101,3 +101,4 @@
 	>	_name_of_ref@{3.minutes.ago}_
 	>	_name_of_ref@{yesterday}_
 	>	_name_of_ref@{'Sat Feb 24 00:11:40 2024 +0530'}_
+- **git config --global alias._name_ _git_command_** : creates a custom alias of the specified name for the specified git command. 
